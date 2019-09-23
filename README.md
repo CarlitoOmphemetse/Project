@@ -20,3 +20,16 @@ The data was prepared by removing NaNs if there are any, because it might happen
 
 Data analysis will be carried out on the shiny web application produced in R. The application consists of simple but imformative visualizations that provide with information about the rise and falls of stock. The application has an upload tab which allows the user to upload the file (NB: Only text files can be uploaded at this stage). Then the remaining tabs contain the summary of the data and the charts. The first chart called Scatterplot takes x variable and y variable as input, (NB: Choose the Date and month as an x variable, the for Y variable you can change between different companies and see as the plot change as y variable chnges). Reactive technique was used to allows the flexibility of the app.
 
+
+Please note the following: 
+
+1. The web scrapped data is the sp500_joined_closes.csv, where only Adj Close columns was consolidated for each company. 
+2. Then the stock_data.csv is the prepared data with no NaNs(Some values of sp500_joined_closes.csv) might have NaNs.
+3. The Shiny Web App is named Application.R (Financial time series data product)
+   NB: Upload the data to the Web App, then be patient as it loads data. Any type text file data can be uploaded with max size of 5MB.
+       On the scatterplot tab, choose 'Date' and 'month' as the x input variable and company names become the y variable.
+       
+       
+ #Tool Requirements:
+   Latest RStudio with Shiny installed with some of the other libraries specified in the application
+
